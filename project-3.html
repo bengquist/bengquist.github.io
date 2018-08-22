@@ -1,0 +1,81 @@
+<div class="load-data">
+    <div class="block-content">
+        <div class="project-head">
+            <h1 class="block-title">Roomers</h1>
+                      <div class="tags"><span>Completion: </span> August 2017</div>
+            <div class="tags"><span>Role: </span>Technical Director</div>
+        </div>
+        <p class="project-description">Roomers was created with the idea of an app that could connect a user with potential roommates based on similar interests, budgets, and housing expectations. This site includes account creation, personal listing creation, a search feature for both users and rooms, and private messaging. As the technical director, I was in charge of choosing which technologies to integrate into the application and was the primary resource for team members that needed help with front-end and back-end issues.
+Technologies used:<br/>
+- Implemented MongoDB to hold and maintain all user data.<br/>
+- Used AWS S3 to upload and store images<br/>
+- Integrated Auth0 for user authentication and protection<br/>
+- Implemented Express and Massive on top of Node.js<br/>
+- Socket.io for feature similar to Facebook messenger<br/>
+- Axios, Momentjs, Google Maps API and Sementic UIs<br/>
+</p>
+        <div class="project-media row">
+            <div id="lionslider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video autoplay loop class="d-block w-100"><source src='./images/portfolio/Roomers Landing.mp4' type='video/mp4'></video>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/portfolio/roomers.PNG" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/portfolio/Roomers 2.jpeg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/portfolio/Roomers 3.jpeg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/portfolio/Roomers 4.jpeg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/portfolio/Roomers 5.jpeg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#lionslider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                <a class="carousel-control-next" href="#lionslider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+            </div>
+        </div>
+        <!-- <div class="project-nav text-center">
+            <span class="float-left">
+                <a class="open-project" href="project-2.html">&leftarrow; Previous Project</a>
+            </span>
+            <span class="">
+                <a id="close-project" href="#"><i class="ion-grid"></i></a>
+            </span>
+            <span class="float-right">
+                <a class="open-project" href="project-4.html">Next Project &rightarrow; </a>
+            </span>
+        </div> -->
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12 btn-email">
+            <a class="btn lowercase">engquist_blake@yahoo.com</a>
+        </div>
+    </div>
+
+    <script>
+        $('.open-project').on('click', function() {
+            var projectUrl = $(this).attr("href");
+            $('.inline-menu-container').removeClass('showx');
+            $('.content-blocks.pop').addClass('showx');
+            $('.content-blocks.pop section').load(projectUrl)
+            return false;
+        });
+        $('#close-project').on('click', function() {
+            $('.content-blocks.pop').removeClass('showx');
+            $('.inline-menu-container').addClass('showx');
+            $('.content-blocks.pop section').empty();
+        });
+    </script>
+</div>
